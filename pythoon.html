@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRIAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CODOUBTry</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Languages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/cplusplus.html">C++</a></li>
+                            <li><a class="dropdown-item active" href="#">Java</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">C#</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">JS</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Signup</button>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignupModalLabel">Signup</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input class="form-control" type="text" placeholder="Enter your Name" aria-label="name">
+              <div class="my-3">
+              <input class="form-control" type="text" placeholder="Mobile no." aria-label="mobileNumber">
+            </div>
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                Must be 8-20 characters long.
+              </span>
+            </div>
+          
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <article class="blog-post">
+    <h2 class="blog-post-title mb-1">What is Python?</h2>
+    
+
+    <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+<br>
+Python was designed for readability, and has some similarities to the English language with influence from mathematics. 
+        <br>
+        Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+        <br>
+        Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</p>
+    <hr>
+    
+    <h2>Why Use Python ?</h2>
+    <p>Here are some reason why you should learn Python :</p>
+    
+    <p>1. Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+        <br>
+
+        2. Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+        <br>
+        
+        3. Python can be treated in a procedural way, an object-oriented way or a functional way.
+        <br>
+        
+        4. Python has a simple syntax similar to the English language.
+        <br>
+        
+        5. Python can be treated in a procedural way, an object-oriented way or a functional way.
+        <br>
+        6. It is secure, fast and powerful.</p>
+        <hr>
+    <h3>Benifits of using Python</h3>
+    <!-- <p>Java™ has significant advantages over other languages and environments that make it suitable for just about any programming task. So here are some advantages of Java :</p> -->
+    
+    <ol>
+      <li>Python can be used on a server to create web applications.</li>
+      <li>Python can be used for rapid prototyping, or for production-ready software development. </li>
+      <li>Python can connect to database systems. It can also read and modify files.</li>
+      <li> Python can be used alongside software to create workflows. </li>
+      
+    </ol>
+   <hr>
+    <h2>Projects of Python are : </h2>
+    <p>In this article, you will learn the top project ideas in .Python. Take a glimpse below</p>
+    <ol>
+        <li>system scripting.</li>
+        <li>Games</li>
+        <li>software development</li>
+        <li>Web Servers</li>
+        <li>mathematics</li>
+    </ol>
+    <hr>
+    
+    <h2>So conclusion why we should learn Python :</h2>
+
+    <h5>Python is executable pseudocode. Perl is executable line noise.</h5>
+    <p>Python is an experiment in how much freedom programmers need. Too much freedom and nobody can read another's code; too little and expressiveness is endangered.</p>
+    
+  </article>
+    </div>
+    <footer class="container">
+      <!-- FOOTER --><p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2012–2023 CODUBTry, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
